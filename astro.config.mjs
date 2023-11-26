@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import UnoCSS from 'unocss/astro';
 import qwikdev from "@qwikdev/astro";
-
+  
 import vue from "@astrojs/vue";
 
 // https://astro.build/config
