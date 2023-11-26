@@ -10,5 +10,4 @@ export default defineConfig({
 
   }),qwikdev()],
   site: 'https://enhertree.github.io',
-  base: '/enhertree.github.io',
 });
