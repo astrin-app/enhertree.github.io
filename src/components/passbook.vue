@@ -1,43 +1,22 @@
-import {$, component$, useComputed$, useSignal, useStyles$, useTask$, useVisibleTask$} from '@builder.io/qwik'
-import {type User,data, type Tree} from './db'
-import styles from './passbook.css?inline'
-import Qrcode from 'easyqrcodejs'
-import tippy from 'tippy.js';
-import {LuArrowBigLeft,LuStepForward,LuChevronLeftCircle,LuChevronRightCircle} from '@qwikest/icons/lucide'
-export function getAge(birthDate: Date): number {
-    let today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    let m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-}
-
-export const PassBook = component$(() => {
-    useStyles$(styles)
-    const currentUser = useSignal<User>()
-    const currentPage = useSignal(1);
-    let maxLocation = useSignal(5);
-    const papers = useSignal<HTMLDivElement[]>(null)
-    const book = useSignal<HTMLDivElement>()
-    const previousButton = useSignal<HTMLButtonElement>()
-    const nextButton = useSignal<HTMLButtonElement>()
-    const totalOxygen = useSignal<number>(0)
-    const electricBill = useSignal<string>("0")
-    const gasBill = useSignal<string>("0")
-    const petrolBill = useSignal<string>("0")
-    const sum = useSignal<number>(0)
-    useTask$(({track}) => {
-        track(() => electricBill.value)
-        track(() => petrolBill.value)
-        track(() => gasBill.value)
-        if (currentUser.value){
-
-            sum.value = (currentUser.value.age * ((+electricBill.value * 105) + (+gasBill.value * 105) + (+petrolBill.value * 113)))/1000   
-        }
+<script setup lang="ts">
+    import { type Ref,ref, computed, onMounted } from 'vue';
+import { data, type User } from './db';
+    const currentUser = ref<User>()
+    const currentPage = ref(1);
+    let maxLocation = ref(5);
+    const papers = ref<HTMLDivElement[]>(null)
+    const book = ref<HTMLDivElement>()
+    const previousButton = ref<HTMLButtonElement>()
+    const nextButton = ref<HTMLButtonElement>()
+    const totalOxygen = ref<number>(0)
+    const electricBill = ref<string>("0")
+    const gasBill = ref<string>("0")
+    const petrolBill = ref<string>("0")
+    const sum = computed(() => {
+            return (currentUser.value.age * ((+electricBill.value * 105) + (+gasBill.value * 105) + (+petrolBill.value * 113)))/1000 
     })
-    useVisibleTask$(() => {
+
+    onMounted(() => {
         let username = localStorage.getItem("user");
        currentUser.value = data.filter((el) => {
             return el.firstName == username
@@ -46,14 +25,17 @@ export const PassBook = component$(() => {
        currentUser.value.trees.forEach((tree) => {
             totalOxygen.value += (getAge(tree.dayPlanted) * 100) + (getAge(tree.dayPlanted) * 5)
        })
+       console.log(papers.value)
     })
 
-    const openBook = $(() => {
+    
+    const openBook = () => {
         book.value.style.transform = "translateX(50%)";
         previousButton.value.style.transform = "translateX(-180px)";
         nextButton.value.style.transform = "translateX(180px)";
-    })
-    const closeBook = $((isAtStart: boolean) => {
+    }
+
+    const closeBook = (isAtStart: boolean) => {
         if(isAtStart) {
             book.value.style.transform = "translateX(0%)";
         } else {
@@ -62,9 +44,9 @@ export const PassBook = component$(() => {
         
         previousButton.value.style.transform = "translateX(0px)";
         nextButton.value.style.transform = "translateX(0px)";
-    })
+    }
 
-    const goNextPage = $(() => {
+    const goNextPage = () => {
         if (currentPage.value < maxLocation.value){
             switch (currentPage.value){
                 case 1:
@@ -97,9 +79,9 @@ export const PassBook = component$(() => {
             }
         }
         currentPage.value++
-    })
+    }
 
-    const goPreviousPage = $(() => {
+    const goPreviousPage =() => {
         if(currentPage.value > 1) {
             switch(currentPage.value) {
                 case 2:
@@ -128,15 +110,18 @@ export const PassBook = component$(() => {
     
             currentPage.value--;
         }
-    })
-    return (
-        <div class="body font-sans!">
-                <button onClick$={goPreviousPage} ref={previousButton} id="prev-btn">
-            <LuChevronLeftCircle class="w-12 h-12"/>
+    }
+</script>
+
+<template>
+        <div v-if="currentUser" class="body font-sans!">
+
+        <button @click="goPreviousPage" ref="previousButton" id="prev-btn">
+            Previous
     </button>
     
     
-    <div ref={book} id="book" class="book">
+    <div ref="book" id="book" class="book">
         <div id="p1" class="paper ">
             <div class="front">
                 <div id="f1" class="front-content font-sans!   flex justify-center items-center  bg-#607144! text-white">
@@ -145,9 +130,9 @@ export const PassBook = component$(() => {
             </div>
             <div class="back">
                 <div id="b1" class="back-content text-center gap-3 px-4 box-border py-5">
-                <h1 style={{fontFamily: "harlouda"}}>Account Details</h1>
+                <h1 style="font-family: 'harlouda';">Account Details</h1>
                 <hr />
-                <h2 class="text-2xl">Name: {currentUser.value ? currentUser.value.firstName : ""} {currentUser.value ? currentUser.value.lastName : ""} </h2>
+                <h2 class="text-2xl">Name: {{currentUser.firstName}} {currentUser.value ? currentUser.value.lastName : ""} </h2>
                 <h2 class="text-2xl">Age: {currentUser.value ? currentUser.value.age : ""} </h2>
                 <h2 class="text-2xl">Gender: {currentUser.value ? currentUser.value.gender : ""} </h2>
                 <hr />
@@ -168,29 +153,29 @@ export const PassBook = component$(() => {
             </div>
             <div class="back">
                 <div id="b2" class="back-content overflow-scroll text-center px-4 box-border">
-                <h1 class="text-4xl mt-4" style={{fontFamily: "harlouda"}}>Credit</h1>
+                <h1 class="text-4xl mt-4" style="font-family: 'harlouda';">Credit</h1>
                 <hr />
-                {currentUser.value && currentUser.value.trees.map((tree,index,array) => 
+                <!-- {currentUser.value && currentUser.value.trees.map((tree,index,array) => 
                     <Tree key={index} index={index} />
-                )}
+                )} -->
             </div>
         </div>
         </div>
         <div id="p3" class="paper ">
             <div class="front relative">
                <div id="f3" class="front-content  gap-17 text-center font-sans! overflow-scroll px-4 box-border ">
-                    <h1 class="text-4xl mt-4" style={{fontFamily: "harlouda"}}>Credit</h1>
+                    <h1 class="text-4xl mt-4" style="font-family: 'harlouda';">Credit</h1>
                     <hr />
-                    {currentUser.value && currentUser.value.trees.map((tree,index,array) => 
+                    <!-- {currentUser.value && currentUser.value.trees.map((tree,index,array) => 
                     <TreeCalculation key={index} tree={tree} array={array} />
-                )}
+                )} -->
                 
                 <h1 class="bg-orange-200 p-2 box-border absolute bottom-0">Enher Points: {totalOxygen.value}</h1>
                 </div>
             </div>
             <div class="back">
                 <div id="b3" class="back-content text-center font-sans! px-4 box-border">
-                    <h1 class="text-4xl mt-4" style={{fontFamily: "harlouda"}}>Debit</h1>
+                    <h1 class="text-4xl mt-4" style="font-family: 'harlouda';">Debit</h1>
                     <hr />
 
                      <h1 class="bg-orange-200 dsd p-2 box-border  font-bold mt-10" style="font-family: 'Anton';">To check your carbon emission & Enjoy our services please fill the following form with your respected response:</h1>
@@ -201,7 +186,7 @@ export const PassBook = component$(() => {
         <div id="p4" class="paper ">
             <div class="front">
                 <div id="f4" class="front-content font-sans!  text-center">
-                <h1 class="text-4xl mt-4" style={{fontFamily: "harlouda"}}>Debit</h1>
+                <h1 class="text-4xl mt-4" style="font-family: 'harlouda';">Debit</h1>
                     <hr />
                 <div>
                      <h1 class="bg-orange-200 p-2 box-border  font-bold mt-3" style="font-family: 'Anton';">
@@ -212,20 +197,22 @@ export const PassBook = component$(() => {
 
                         <label class="block">
                             Your Monthly Electric Bill Charges
-                            <input type="number" bind:value={electricBill}/> 
+                            <input type="number" v-model="electricBill"/> 
                         </label>
                         <label class="block">
                             Your Monthly Gas Bill Charges
-                            <input type="number" bind:value={gasBill}/> 
+                            <input type="number" v-model="gasBill"/> 
                         </label>
                         <hr />
                         <label class="block bg-orange-200 p-2 box-border  font-bold">
                             Your Monthly Petroleum Bill Charges
-                            <input type="number" bind:value={petrolBill}/> 
+                            <input type="number" v-model="petrolBill" /> 
                         </label>
-                        <h1>Result: {totalOxygen.value - sum.value}</h1>
+                        <h1>Result: {{totalOxygen - sum}}</h1>
                         <br />
-                        <a href="/" class="bg-#607222 p-4 no-underline text-white mt-3"><LuStepForward class="w-5  h-5"/>Continue</a>
+                        <a href="/" class="bg-#607222 p-4 no-underline text-white mt-3">
+                            <LuStepForward class="w-5  h-5"/>
+                            Continue</a>
                      </div>
 
                     </div>
@@ -238,57 +225,129 @@ export const PassBook = component$(() => {
         </div>
         </div>
 </div>
-<button onClick$={goNextPage } ref={nextButton} id="next-btn">
- <LuChevronRightCircle class="w-12 h-12"/>
+<button @click="goNextPage" ref="nextButton" id="next-btn">
+    Next
 </button>
 
         </div>
-    )
-}) 
 
-type TreeProps = {
-    index: number
+
+</template>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@500&family=Montserrat&display=swap');
+
+.body {
+    height: calc(100vh - 64px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    font-family: sans-serif;
+    background-color: #ff7700;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d6002b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23b10022' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23d9004b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23b2003d' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23d3006c' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23ac0057' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23c4008c' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%239e0071' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
-const Tree = component$<TreeProps>(({index}) => {
-    const qr = useSignal<HTMLElement>()
-    useVisibleTask$(() => {
-        new Qrcode(qr.value, {
-            text:'http://localhost:4321/mytree?i='+index,
-            height:150,
-            width:150,
-            logo: '/btree.png'
-        })
-    })
-    return (
-        <a class="my-5" href={'http://localhost:4321/mytree?i='+index}>
-
-            <h1>
-                {/* Tree {index+1} */}
-                <div ref={qr} class="qr"></div>
-            </h1>
-        </a>
-    )
-})
-
-type TreeCalculationProps = {
-    tree: Tree
-    array: Tree[]
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
 }
 
-const TreeCalculation = component$<TreeCalculationProps>(({tree}) => {
-    const elTip = useSignal<HTMLHeadingElement>()
-    useVisibleTask$(() => {
-        tippy(elTip.value,{
-            content: "Oxygen Produced By Tree"
-        })
-    })
-    return (
-        <>
-            <h1 ref={elTip}>
-                <LuArrowBigLeft/>
-                {(getAge(tree.dayPlanted) * 100) + (getAge(tree.dayPlanted) * 5)}</h1>
-            <hr />
-        </>
-    )
-})
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.dsd{
+    font-family: 'Anton';
+}
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: gray;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+
+#p4 {
+    z-index: 0;
+}
+</style>

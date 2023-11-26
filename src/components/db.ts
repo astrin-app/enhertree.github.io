@@ -10,6 +10,7 @@ export type User = {
     lastName: string;
     email: string;
     age: number;
+    birthday:Date;
     gender:string;
     trees : Tree[]
 }
@@ -18,6 +19,7 @@ export const data: User[] = [
         firstName: "Rajesh",
         lastName: "Kumawat",
         age:10,
+        birthday: new Date("2012-3-2"),
         gender: "MALE",
         email: "rajesh121@gmail.com",
         trees: [
@@ -61,6 +63,7 @@ export const data: User[] = [
         lastName: "Jogi",
         email: "bhupendra2@gmail.com",
         gender: "FEMALE",
+        birthday: new Date("2001-3-2"),
         age:12,
         trees: [
             {

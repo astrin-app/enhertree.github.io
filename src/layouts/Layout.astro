@@ -13,8 +13,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 
 	</head>
-	<body>
-
+	<body id="swup" class="transition-fade">
+		<script src="https://unpkg.com/swup@4"></script>
+		<script src="https://unpkg.com/@swup/scripts-plugin@2"></script>
 		<slot />
 	</body>
 </html>
@@ -41,4 +42,13 @@ const { title } = Astro.props;
 
 		font-family: 'Montserrat';
 	}
+	/* Define a transition duration during page visits */
+html.is-changing .transition-fade {
+  transition: opacity 0.25s;
+  opacity: 1;
+}
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade {
+  opacity: 0;
+}
 </style>
