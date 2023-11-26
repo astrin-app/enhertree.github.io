@@ -1,0 +1,2 @@
+const r=`.nav{width:100vw;display:flex;align-items:center;padding-inline:23px;height:64px;-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px);background:rgba(255,255,255,.267);background-size:cover;background-image:url(/navbg.png)}#login{justify-self:end}#login button{background:none;border:none;transition:color .2s ease}#login button:hover{color:#fff}.dialog::backdrop{-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px)}
+`,o=r;export{o as s_5Zh5uFwYNrU};

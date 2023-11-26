@@ -1,0 +1,1 @@
+import{A as o}from"./q-579fca59.js";import{c as m}from"./q-579fca59.js";const i=({track:e})=>{const[l,a,u,s,v]=o();e(()=>a.value),e(()=>s.value),e(()=>u.value),l.value&&(v.value=l.value.age*(+a.value*105+ +u.value*105+ +s.value*113)/1e3)};export{m as _hW,i as s_QFFP401sS8U};

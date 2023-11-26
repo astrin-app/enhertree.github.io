@@ -1,0 +1,1 @@
+import{A as n}from"./q-579fca59.js";import{c as g}from"./q-579fca59.js";import{d as c}from"./q-75094c98.js";const i=()=>{const[r,t]=n();let a=localStorage.getItem("user");r.value=c.filter(e=>e.firstName==a)[0];const o=new Proxy(new URLSearchParams(window.location.search),{get:(e,s)=>e.get(s)});t.value=r.value.trees[o.i]};export{g as _hW,i as s_06oIxi2ZQ94};

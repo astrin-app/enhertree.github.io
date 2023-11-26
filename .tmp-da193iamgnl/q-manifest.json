@@ -1,0 +1,879 @@
+{
+  "manifestHash": "4ltemg",
+  "symbols": {
+    "s_QFFP401sS8U": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_useTask",
+      "canonicalFilename": "s_qffp401ss8u",
+      "hash": "QFFP401sS8U",
+      "ctxKind": "function",
+      "ctxName": "useTask$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        1331,
+        1656
+      ]
+    },
+    "s_06oIxi2ZQ94": {
+      "origin": "components/tree.tsx",
+      "displayName": "Tree_component_useVisibleTask",
+      "canonicalFilename": "s_06oixi2zq94",
+      "hash": "06oIxi2ZQ94",
+      "ctxKind": "function",
+      "ctxName": "useVisibleTask$",
+      "captures": true,
+      "parent": "s_H487JZkGWkE",
+      "loc": [
+        284,
+        691
+      ]
+    },
+    "s_wlNO4c1u8i4": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component_useVisibleTask",
+      "canonicalFilename": "s_wlno4c1u8i4",
+      "hash": "wlNO4c1u8i4",
+      "ctxKind": "function",
+      "ctxName": "useVisibleTask$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        638,
+        967
+      ]
+    },
+    "s_5wgcxBGcPYM": {
+      "origin": "components/passbook.tsx",
+      "displayName": "TreeCalculation_component",
+      "canonicalFilename": "s_5wgcxbgcpym",
+      "hash": "5wgcxBGcPYM",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false,
+      "parent": null,
+      "loc": [
+        11368,
+        11780
+      ]
+    },
+    "s_KQ0talmDmFo": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component",
+      "canonicalFilename": "s_kq0talmdmfo",
+      "hash": "KQ0talmDmFo",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false,
+      "parent": null,
+      "loc": [
+        728,
+        10635
+      ]
+    },
+    "s_jSxTbPvpawo": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component",
+      "canonicalFilename": "s_jsxtbpvpawo",
+      "hash": "jSxTbPvpawo",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false,
+      "parent": null,
+      "loc": [
+        354,
+        4620
+      ]
+    },
+    "s_wlx6MvWxVJw": {
+      "origin": "components/passbook.tsx",
+      "displayName": "Tree_component",
+      "canonicalFilename": "s_wlx6mvwxvjw",
+      "hash": "wlx6MvWxVJw",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false,
+      "parent": null,
+      "loc": [
+        10720,
+        11235
+      ]
+    },
+    "s_5Zh5uFwYNrU": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component_useStylesScoped",
+      "canonicalFilename": "s_5zh5ufwynru",
+      "hash": "5Zh5uFwYNrU",
+      "ctxKind": "function",
+      "ctxName": "useStylesScoped$",
+      "captures": false,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        389,
+        395
+      ]
+    },
+    "s_5JfdBHwN71U": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component_openDialog",
+      "canonicalFilename": "s_5jfdbhwn71u",
+      "hash": "5JfdBHwN71U",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        995,
+        1124
+      ]
+    },
+    "s_8nkZKv0CGwM": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_goPreviousPage",
+      "canonicalFilename": "s_8nkzkv0cgwm",
+      "hash": "8nkZKv0CGwM",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        4061,
+        5132
+      ]
+    },
+    "s_BYC7FwQc8HQ": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_openBook",
+      "canonicalFilename": "s_byc7fwqc8hq",
+      "hash": "BYC7FwQc8HQ",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        2172,
+        2378
+      ]
+    },
+    "s_Izg0QLpW0Wo": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component__Fragment_dialog_form_input_bind_value",
+      "canonicalFilename": "s_izg0qlpw0wo",
+      "hash": "Izg0QLpW0Wo",
+      "ctxKind": "eventHandler",
+      "ctxName": "onInput$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        0,
+        0
+      ]
+    },
+    "s_VIHhkPNC1Ns": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component__Fragment_dialog_form_input_bind_value_1",
+      "canonicalFilename": "s_vihhkpnc1ns",
+      "hash": "VIHhkPNC1Ns",
+      "ctxKind": "eventHandler",
+      "ctxName": "onInput$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        0,
+        0
+      ]
+    },
+    "s_YEPXul1CzUY": {
+      "origin": "components/passbook.tsx",
+      "displayName": "Tree_component_useVisibleTask",
+      "canonicalFilename": "s_yepxul1czuy",
+      "hash": "YEPXul1CzUY",
+      "ctxKind": "function",
+      "ctxName": "useVisibleTask$",
+      "captures": true,
+      "parent": "s_wlx6MvWxVJw",
+      "loc": [
+        10797,
+        10995
+      ]
+    },
+    "s_dSd7z4m9YXE": {
+      "origin": "components/passbook.tsx",
+      "displayName": "TreeCalculation_component_useVisibleTask",
+      "canonicalFilename": "s_dsd7z4m9yxe",
+      "hash": "dSd7z4m9YXE",
+      "ctxKind": "function",
+      "ctxName": "useVisibleTask$",
+      "captures": true,
+      "parent": "s_5wgcxBGcPYM",
+      "loc": [
+        11454,
+        11557
+      ]
+    },
+    "s_i09zIrhHnO8": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_div_div_div_div_div_div_div_label_input_bind_value_1",
+      "canonicalFilename": "s_i09zirhhno8",
+      "hash": "i09zIrhHnO8",
+      "ctxKind": "eventHandler",
+      "ctxName": "onInput$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        0,
+        0
+      ]
+    },
+    "s_wpLSpsxYAZg": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_useVisibleTask",
+      "canonicalFilename": "s_wplspsxyazg",
+      "hash": "wpLSpsxYAZg",
+      "ctxKind": "function",
+      "ctxName": "useVisibleTask$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        1679,
+        2144
+      ]
+    },
+    "s_H487JZkGWkE": {
+      "origin": "components/tree.tsx",
+      "displayName": "Tree_component",
+      "canonicalFilename": "s_h487jzkgwke",
+      "hash": "H487JZkGWkE",
+      "ctxKind": "function",
+      "ctxName": "component$",
+      "captures": false,
+      "parent": null,
+      "loc": [
+        179,
+        1889
+      ]
+    },
+    "s_ZhPFWVivgDU": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_useStyles",
+      "canonicalFilename": "s_zhpfwvivgdu",
+      "hash": "ZhPFWVivgDU",
+      "ctxKind": "function",
+      "ctxName": "useStyles$",
+      "captures": false,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        752,
+        758
+      ]
+    },
+    "s_XEfXdoTsQOM": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component_login",
+      "canonicalFilename": "s_xefxdotsqom",
+      "hash": "XEfXdoTsQOM",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        1303,
+        2100
+      ]
+    },
+    "s_j0Xixr6SC9o": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component_closeDialog",
+      "canonicalFilename": "s_j0xixr6sc9o",
+      "hash": "j0Xixr6SC9o",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        1153,
+        1242
+      ]
+    },
+    "s_ozbmXTxhFmg": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_closeBook",
+      "canonicalFilename": "s_ozbmxtxhfmg",
+      "hash": "ozbmXTxhFmg",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        2405,
+        2753
+      ]
+    },
+    "s_sXCWf7lozMc": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_goNextPage",
+      "canonicalFilename": "s_sxcwf7lozmc",
+      "hash": "sXCWf7lozMc",
+      "ctxKind": "function",
+      "ctxName": "$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        2783,
+        4027
+      ]
+    },
+    "s_teJ5gzmQKLU": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_div_div_div_div_div_div_div_label_input_bind_value",
+      "canonicalFilename": "s_tej5gzmqklu",
+      "hash": "teJ5gzmQKLU",
+      "ctxKind": "eventHandler",
+      "ctxName": "onInput$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        0,
+        0
+      ]
+    },
+    "s_vwYWQnH8v3U": {
+      "origin": "components/nav.tsx",
+      "displayName": "NavBar_component__Fragment_nav_div_button_onClick",
+      "canonicalFilename": "s_vwywqnh8v3u",
+      "hash": "vwYWQnH8v3U",
+      "ctxKind": "eventHandler",
+      "ctxName": "onClick$",
+      "captures": true,
+      "parent": "s_jSxTbPvpawo",
+      "loc": [
+        2776,
+        3004
+      ]
+    },
+    "s_wkNiGjNuQMw": {
+      "origin": "components/passbook.tsx",
+      "displayName": "PassBook_component_div_div_div_div_div_div_div_label_input_bind_value_2",
+      "canonicalFilename": "s_wknigjnuqmw",
+      "hash": "wkNiGjNuQMw",
+      "ctxKind": "eventHandler",
+      "ctxName": "onInput$",
+      "captures": true,
+      "parent": "s_KQ0talmDmFo",
+      "loc": [
+        0,
+        0
+      ]
+    }
+  },
+  "mapping": {
+    "s_QFFP401sS8U": "q-33b3c625.js",
+    "s_06oIxi2ZQ94": "q-5f6a4851.js",
+    "s_wlNO4c1u8i4": "q-03102619.js",
+    "s_5wgcxBGcPYM": "q-22ee85b6.js",
+    "s_KQ0talmDmFo": "q-5cf831b2.js",
+    "s_jSxTbPvpawo": "q-e60300e6.js",
+    "s_wlx6MvWxVJw": "q-d56a7a8f.js",
+    "s_5Zh5uFwYNrU": "q-b4a4562e.js",
+    "s_5JfdBHwN71U": "q-81befd11.js",
+    "s_8nkZKv0CGwM": "q-5b4bedb5.js",
+    "s_BYC7FwQc8HQ": "q-3c18e849.js",
+    "s_Izg0QLpW0Wo": "q-655a1f1a.js",
+    "s_VIHhkPNC1Ns": "q-b35b33ef.js",
+    "s_YEPXul1CzUY": "q-89240223.js",
+    "s_dSd7z4m9YXE": "q-6f441f7a.js",
+    "s_i09zIrhHnO8": "q-d8dceb6d.js",
+    "s_wpLSpsxYAZg": "q-ca4281df.js",
+    "s_H487JZkGWkE": "q-05b1c57f.js",
+    "s_ZhPFWVivgDU": "q-de6a2b19.js",
+    "s_XEfXdoTsQOM": "q-bd505453.js",
+    "s_j0Xixr6SC9o": "q-3c4b48b4.js",
+    "s_ozbmXTxhFmg": "q-6b598fdc.js",
+    "s_sXCWf7lozMc": "q-4dab7088.js",
+    "s_teJ5gzmQKLU": "q-cbecb355.js",
+    "s_vwYWQnH8v3U": "q-35a26810.js",
+    "s_wkNiGjNuQMw": "q-2e3c6cf6.js"
+  },
+  "bundles": {
+    "q-03102619.js": {
+      "size": 346,
+      "imports": [
+        "q-579fca59.js",
+        "q-75094c98.js"
+      ],
+      "origins": [
+        "src/s_wlno4c1u8i4.js"
+      ],
+      "symbols": [
+        "s_wlNO4c1u8i4"
+      ]
+    },
+    "q-05b1c57f.js": {
+      "size": 1346,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-5f6a4851.js"
+      ],
+      "origins": [
+        "src/s_h487jzkgwke.js"
+      ],
+      "symbols": [
+        "s_H487JZkGWkE"
+      ]
+    },
+    "q-133366db.js": {
+      "size": 2704,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "node_modules/@qwikest/icons/lib/lu.qwik.mjs"
+      ]
+    },
+    "q-22ee85b6.js": {
+      "size": 478,
+      "imports": [
+        "q-133366db.js",
+        "q-579fca59.js",
+        "q-8632d684.js"
+      ],
+      "dynamicImports": [
+        "q-6f441f7a.js"
+      ],
+      "origins": [
+        "src/s_5wgcxbgcpym.js"
+      ],
+      "symbols": [
+        "s_5wgcxBGcPYM"
+      ]
+    },
+    "q-2e3c6cf6.js": {
+      "size": 117,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_wknigjnuqmw.js"
+      ],
+      "symbols": [
+        "s_wkNiGjNuQMw"
+      ]
+    },
+    "q-33b3c625.js": {
+      "size": 276,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_qffp401ss8u.js"
+      ],
+      "symbols": [
+        "s_QFFP401sS8U"
+      ]
+    },
+    "q-35a26810.js": {
+      "size": 163,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_vwywqnh8v3u.js"
+      ],
+      "symbols": [
+        "s_vwYWQnH8v3U"
+      ]
+    },
+    "q-3c18e849.js": {
+      "size": 271,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_byc7fwqc8hq.js"
+      ],
+      "symbols": [
+        "s_BYC7FwQc8HQ"
+      ]
+    },
+    "q-3c4b48b4.js": {
+      "size": 181,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_j0xixr6sc9o.js"
+      ],
+      "symbols": [
+        "s_j0Xixr6SC9o"
+      ]
+    },
+    "q-4dab7088.js": {
+      "size": 652,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_sxcwf7lozmc.js"
+      ],
+      "symbols": [
+        "s_sXCWf7lozMc"
+      ]
+    },
+    "q-4ee7f112.js": {
+      "size": 182,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-05b1c57f.js"
+      ],
+      "origins": [
+        "src/components/tree.tsx"
+      ]
+    },
+    "q-579fca59.js": {
+      "size": 47432,
+      "origins": [
+        "node_modules/@builder.io/qwik/core.min.mjs"
+      ]
+    },
+    "q-5b4bedb5.js": {
+      "size": 576,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_8nkzkv0cgwm.js"
+      ],
+      "symbols": [
+        "s_8nkZKv0CGwM"
+      ]
+    },
+    "q-5cf831b2.js": {
+      "size": 5886,
+      "imports": [
+        "q-133366db.js",
+        "q-579fca59.js",
+        "q-8632d684.js"
+      ],
+      "dynamicImports": [
+        "q-2e3c6cf6.js",
+        "q-33b3c625.js",
+        "q-3c18e849.js",
+        "q-4dab7088.js",
+        "q-5b4bedb5.js",
+        "q-6b598fdc.js",
+        "q-ca4281df.js",
+        "q-cbecb355.js",
+        "q-d8dceb6d.js",
+        "q-de6a2b19.js"
+      ],
+      "origins": [
+        "src/s_kq0talmdmfo.js"
+      ],
+      "symbols": [
+        "s_KQ0talmDmFo"
+      ]
+    },
+    "q-5f6a4851.js": {
+      "size": 360,
+      "imports": [
+        "q-579fca59.js",
+        "q-75094c98.js"
+      ],
+      "origins": [
+        "src/s_06oixi2zq94.js"
+      ],
+      "symbols": [
+        "s_06oIxi2ZQ94"
+      ]
+    },
+    "q-655a1f1a.js": {
+      "size": 117,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_izg0qlpw0wo.js"
+      ],
+      "symbols": [
+        "s_Izg0QLpW0Wo"
+      ]
+    },
+    "q-6b598fdc.js": {
+      "size": 309,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_ozbmxtxhfmg.js"
+      ],
+      "symbols": [
+        "s_ozbmXTxhFmg"
+      ]
+    },
+    "q-6f441f7a.js": {
+      "size": 36045,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "node_modules/@popperjs/core/lib/createPopper.js",
+        "node_modules/@popperjs/core/lib/dom-utils/contains.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getNodeName.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getParentNode.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getWindow.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js",
+        "node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js",
+        "node_modules/@popperjs/core/lib/dom-utils/instanceOf.js",
+        "node_modules/@popperjs/core/lib/dom-utils/isLayoutViewport.js",
+        "node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js",
+        "node_modules/@popperjs/core/lib/dom-utils/isTableElement.js",
+        "node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js",
+        "node_modules/@popperjs/core/lib/enums.js",
+        "node_modules/@popperjs/core/lib/modifiers/applyStyles.js",
+        "node_modules/@popperjs/core/lib/modifiers/arrow.js",
+        "node_modules/@popperjs/core/lib/modifiers/computeStyles.js",
+        "node_modules/@popperjs/core/lib/modifiers/eventListeners.js",
+        "node_modules/@popperjs/core/lib/modifiers/flip.js",
+        "node_modules/@popperjs/core/lib/modifiers/hide.js",
+        "node_modules/@popperjs/core/lib/modifiers/offset.js",
+        "node_modules/@popperjs/core/lib/modifiers/popperOffsets.js",
+        "node_modules/@popperjs/core/lib/modifiers/preventOverflow.js",
+        "node_modules/@popperjs/core/lib/popper.js",
+        "node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js",
+        "node_modules/@popperjs/core/lib/utils/computeOffsets.js",
+        "node_modules/@popperjs/core/lib/utils/debounce.js",
+        "node_modules/@popperjs/core/lib/utils/detectOverflow.js",
+        "node_modules/@popperjs/core/lib/utils/expandToHashMap.js",
+        "node_modules/@popperjs/core/lib/utils/getAltAxis.js",
+        "node_modules/@popperjs/core/lib/utils/getBasePlacement.js",
+        "node_modules/@popperjs/core/lib/utils/getFreshSideObject.js",
+        "node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js",
+        "node_modules/@popperjs/core/lib/utils/getOppositePlacement.js",
+        "node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js",
+        "node_modules/@popperjs/core/lib/utils/getVariation.js",
+        "node_modules/@popperjs/core/lib/utils/math.js",
+        "node_modules/@popperjs/core/lib/utils/mergeByName.js",
+        "node_modules/@popperjs/core/lib/utils/mergePaddingObject.js",
+        "node_modules/@popperjs/core/lib/utils/orderModifiers.js",
+        "node_modules/@popperjs/core/lib/utils/rectToClientRect.js",
+        "node_modules/@popperjs/core/lib/utils/userAgent.js",
+        "node_modules/@popperjs/core/lib/utils/within.js",
+        "node_modules/tippy.js/dist/tippy.esm.js",
+        "src/s_dsd7z4m9yxe.js"
+      ],
+      "symbols": [
+        "s_dSd7z4m9YXE"
+      ]
+    },
+    "q-75094c98.js": {
+      "size": 980,
+      "origins": [
+        "src/components/db.ts"
+      ]
+    },
+    "q-81befd11.js": {
+      "size": 198,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_5jfdbhwn71u.js"
+      ],
+      "symbols": [
+        "s_5JfdBHwN71U"
+      ]
+    },
+    "q-8632d684.js": {
+      "size": 641,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-22ee85b6.js",
+        "q-5cf831b2.js",
+        "q-d56a7a8f.js"
+      ],
+      "origins": [
+        "src/components/passbook.tsx"
+      ]
+    },
+    "q-89240223.js": {
+      "size": 51669,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "node_modules/easyqrcodejs/dist/easy.qrcode.min.js",
+        "src/s_yepxul1czuy.js"
+      ],
+      "symbols": [
+        "s_YEPXul1CzUY"
+      ]
+    },
+    "q-b35b33ef.js": {
+      "size": 117,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_vihhkpnc1ns.js"
+      ],
+      "symbols": [
+        "s_VIHhkPNC1Ns"
+      ]
+    },
+    "q-b4a4562e.js": {
+      "size": 479,
+      "origins": [
+        "src/components/nav.styl?used&inline",
+        "src/s_5zh5ufwynru.js"
+      ],
+      "symbols": [
+        "s_5Zh5uFwYNrU"
+      ]
+    },
+    "q-bd505453.js": {
+      "size": 450,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_xefxdotsqom.js"
+      ],
+      "symbols": [
+        "s_XEfXdoTsQOM"
+      ]
+    },
+    "q-ca4281df.js": {
+      "size": 426,
+      "imports": [
+        "q-579fca59.js",
+        "q-75094c98.js",
+        "q-8632d684.js"
+      ],
+      "origins": [
+        "src/s_wplspsxyazg.js"
+      ],
+      "symbols": [
+        "s_wpLSpsxYAZg"
+      ]
+    },
+    "q-cbecb355.js": {
+      "size": 117,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_tej5gzmqklu.js"
+      ],
+      "symbols": [
+        "s_teJ5gzmQKLU"
+      ]
+    },
+    "q-d56a7a8f.js": {
+      "size": 402,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-89240223.js"
+      ],
+      "origins": [
+        "src/s_wlx6mvwxvjw.js"
+      ],
+      "symbols": [
+        "s_wlx6MvWxVJw"
+      ]
+    },
+    "q-d8dceb6d.js": {
+      "size": 117,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "origins": [
+        "src/s_i09zirhhno8.js"
+      ],
+      "symbols": [
+        "s_i09zIrhHnO8"
+      ]
+    },
+    "q-de6a2b19.js": {
+      "size": 2082,
+      "origins": [
+        "src/components/passbook.css?used&inline",
+        "src/s_zhpfwvivgdu.js"
+      ],
+      "symbols": [
+        "s_ZhPFWVivgDU"
+      ]
+    },
+    "q-e60300e6.js": {
+      "size": 3066,
+      "imports": [
+        "q-133366db.js",
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-03102619.js",
+        "q-35a26810.js",
+        "q-3c4b48b4.js",
+        "q-655a1f1a.js",
+        "q-81befd11.js",
+        "q-b35b33ef.js",
+        "q-b4a4562e.js",
+        "q-bd505453.js"
+      ],
+      "origins": [
+        "src/s_jsxtbpvpawo.js"
+      ],
+      "symbols": [
+        "s_jSxTbPvpawo"
+      ]
+    },
+    "q-f073b999.js": {
+      "size": 206,
+      "imports": [
+        "q-579fca59.js"
+      ],
+      "dynamicImports": [
+        "q-e60300e6.js"
+      ],
+      "origins": [
+        "src/components/nav.tsx"
+      ]
+    }
+  },
+  "injections": [],
+  "version": "1",
+  "options": {
+    "target": "client",
+    "buildMode": "production",
+    "entryStrategy": {
+      "type": "hook"
+    }
+  },
+  "platform": {
+    "qwik": "1.2.19",
+    "vite": "",
+    "rollup": "3.29.4",
+    "env": "node",
+    "os": "win32",
+    "node": "21.2.0"
+  }
+}

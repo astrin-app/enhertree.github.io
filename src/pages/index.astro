@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { NavBar } from '../components/nav';
+---
+
+<Layout title="Welcome to Astro.">
+    <NavBar />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@500&family=Montserrat&display=swap');
+@import "https://unpkg.com/open-props";
+
+    </style>
+    <div class="aparent">
+        <div class="p1 panel bg-#BED6C5" >
+                   <img class="box" src="/animtree.gif" alt="">
+           </div>
+           <div class="p2 panel">
+               <h1 class="text-center uppercase w-50% tracking-wide text-7xl text-balance drop-shadow-lg drop-shadow-black p-6" style="font-family:'Anton';box-shadow:var(--shadow-4);">Welcoming you the AI.
+               #EnherTREE
+               </h3>
+               <div class="flex flex-col w-100% gap-3 items-center">
+                   
+                   <a data-heading href="/mybook" class="bg-white decoration-none p-3 rounded-3 h-30px grid place-items-center text-black hover:bg-black hover:text-white transition-all duration-250 w-80%  text-center font-bold  uppercase mont">My Enherbook</a>
+                   <a data-heading href="/myaadhar" class="bg-white decoration-none p-3 rounded-3 h-30px grid place-items-center  text-black hover:bg-black hover:text-white transition-all duration-250 w-80% text-center font-bold  uppercase mont ">My Enher Aadhar</a>
+                   <a data-heading href="/buytrees" class="bg-white decoration-none p-3 rounded-3 h-30px grid place-items-center text-black hover:bg-black hover:text-white transition-all duration-250 w-80%  text-center font-bold  uppercase mont">EnherSHop</a>
+                   <a data-heading href="/enhergoals" class="bg-white decoration-none p-3 rounded-3 h-30px grid place-items-center text-black hover:bg-black hover:text-white transition-all duration-250 w-80%  text-center font-bold  uppercase mont">EnherGoals</a>
+
+               </div>
+   
+   
+           </div>
+           
+       </div>
+</Layout>
+<style
+
+
+>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@500&family=Montserrat&display=swap');
+    .aparent{
+        display: grid;
+        grid-template-areas: 
+            'p1  p2'
+            'p1 p2';
+        width: 100vw;
+        height:calc(100vh - var(--nav-width));
+        padding: 0;
+        
+       overflow: hidden;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .p1 {
+        grid-area: p1;
+        position: relative;
+    }
+    .p2{
+        grid-area:p2;
+        
+        
+        background-image: url('./bgp2.png');     
+        background-repeat: no-repeat;
+        background-size: cover ;
+        }
+    .panel {
+        display: grid;
+        place-items: center;
+    }
+    .box{
+        width:51%;
+        padding:1.5rem;
+        color:white;
+        scale:2;
+        box-sizing: border-box;
+        display: flex;
+        border-radius: 40px;
+        aspect-ratio: 1/ 1.1;
+
+    }
+</style>

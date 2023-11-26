@@ -1,0 +1,1 @@
+import{A as t}from"./q-579fca59.js";import{c as m}from"./q-579fca59.js";import{f as a}from"./q-75094c98.js";const u=()=>{const[e,o,r,s]=t();a.includes(localStorage.getItem("user"))&&(o.value=!0,s.value=localStorage.getItem("user")),r.isprotected&&!o.value&&(e.value.style.display="grid",e.value.showModal())};export{m as _hW,u as s_wlNO4c1u8i4};
